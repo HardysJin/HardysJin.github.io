@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tetris</title>
+
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    
+</head>
+
+      
+<body>
+    <h3>Tetris</h3>
+    <h5>By Hongyi Jin</h5>
+    <h5>Id 301277714</h5>
+    <div class="wrapper" style="margin: 0 auto; width: 430px; position: relative;">
+
+        <canvas id="gl-canvas" width="256" height="512"></canvas>
+
+        <div class="controls" style="position: absolute; top:0; right:0;">
+            <h4>Next</h4>
+            <canvas id="next-canvas" width="102.4" height="102.4"></canvas>
+
+            <h2>Controls</h2>
+            <button id='sBtn' onclick="this.blur();">START</button>
+            <h1>ROWs: </h1>
+            <span id="label">0</span>  
+            <h6></h6>
+
+            <p>Keys:</p>
+            <p>spc: drop</p>
+            <p>&larr;&darr;&rarr;: move</p>
+            <p>&uarr;: rotate</p>
+            <p>p: pause</p>
+            <p>c: continue</p>
+            <p>r: restart</p>
+            <p>q: quit</p>
+
+        </div>
+         
+    </div>
+    <script src="./dist/main.js"></script>
+</body>
+</html>
